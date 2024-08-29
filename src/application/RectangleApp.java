@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import entities.Rectangle;
 
-public class RectangleProgram {
+public class RectangleApp {
 
 	public static void main(String[] args) {
 		

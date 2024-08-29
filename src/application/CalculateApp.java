@@ -3,7 +3,7 @@ package application;
 import java.util.Scanner;
 import entities.Calculate;
 
-public class CalculateProgram {
+public class CalculateApp {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

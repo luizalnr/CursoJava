@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 import entities.Pedido;
 
-public class HamburguerProgram {
+public class BurguerApp {
 
     public static void main(String[] args) {
         Locale.setDefault(Locale.US); 

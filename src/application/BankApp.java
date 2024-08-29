@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import entities.Account;
 
-public class BankProgram {
+public class BankApp {
 
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);

@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import entities.Triangle;
 
-public class TriangleProgram {
+public class TriangleApp {
 
 	public static void main(String[] args) {
 		

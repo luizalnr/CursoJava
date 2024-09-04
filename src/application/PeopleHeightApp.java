@@ -12,14 +12,12 @@ public class PeopleHeightApp {
 		System.out.print("Quantas pessoas serao digitadas? ");
 		int n = sc.nextInt();
 		
-		// criando os vetores 
-		String[] nomes = new String[n];
-		int[] idades = new int[n];
-		double[] alturas = new double[n];
+		String[] nomes = new String[n]; // criando um vetor para armazenar os nomes
+		int[] idades = new int[n]; // criando um vetor para armazenar as idades
+		double[] alturas = new double[n]; // criando um vetor para armazenar as alturas
 		
-		// for loop para digitar as infs de cada pessoa
 		for (int i=0; i<n; i++) {
-			System.out.print("Dados da "+ (i+1) + "a pessoa: ");
+			System.out.println("Dados da " + (i+1) + "a pessoa: ");
 			System.out.print("Nome: ");
 			nomes[i] = sc.next();
 			System.out.print("Idade: ");
@@ -28,32 +26,33 @@ public class PeopleHeightApp {
 			alturas[i] = sc.nextDouble();
 		}
 		
-		// metodo para somar 
+		// metodo para somar todas as idades e achar a media
 		double soma = 0.0;
 		for (int i=0; i<n; i++) {
 			soma = soma + alturas[i];
 		}
-		// pega o result da soma e divide pela quantidade de pessoas
 		double mediaAlturas = soma / n;
+		
 		System.out.println();
 		System.out.printf("Altura media: %.2f%n", mediaAlturas);
-
 		
-		// metodo para contar pessoas com -16 anos
-		int cont = 0;
+		
+		// metodo para ter a porcentagem pela idade
+		int cont = 0; // variavel q conta as pessoas
 		for (int i=0; i<n; i++) {
-			if (idades[i] < 16) {
-				cont = cont + 1;
+			if (idades[i] < 16) { // se tiver alguem -16
+				cont = cont + 1; // contador conta ela
 			}
 		}
 		double percent = cont * 100.0 / n;
+		
 		System.out.printf("Pessoas com menos de 16 anos: %.1f%%%n", percent);
 		
 		
-		// mostrando nomes dos -16
+		
 		for (int i=0; i<n; i++) {
-			if (idades[i] < 16) { //se a idade for -16
-				System.out.println(nomes[i]); // impreme o nome
+			if (idades[i] < 16) { // se tiver alguem -16
+				System.out.println(nomes[i]);
 			}
 		}
 		
